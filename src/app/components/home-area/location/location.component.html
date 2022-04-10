@@ -1,0 +1,14 @@
+<div class="box">
+
+    <label>Location: </label>
+
+    <select #locationBox (change)="displayLocation(locationBox.value)">
+        <option>North</option>
+        <option>South</option>
+        <option>East</option>
+        <option>West</option>
+    </select>
+
+    <span>My Location: {{locationBox.value}}</span>
+
+</div>
